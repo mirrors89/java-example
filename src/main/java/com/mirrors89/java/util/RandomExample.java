@@ -48,10 +48,10 @@ public class RandomExample {
     @Test
     public void random_nextLong() {
         Random random = new Random();
-        System.out.println(random.nextInt(100));
-        System.out.println(random.nextInt(100));
-        System.out.println(random.nextInt(100));
-        System.out.println(random.nextInt(100));
+        System.out.println(random.nextLong());
+        System.out.println(random.nextLong());
+        System.out.println(random.nextLong());
+        System.out.println(random.nextLong());
     }
 
     @Test

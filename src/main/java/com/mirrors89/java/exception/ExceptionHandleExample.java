@@ -15,7 +15,6 @@ public class ExceptionHandleExample {
     @Test
     public void uncheckedException() {
         Person person = null;
-
         person.setName("이름입니다.");
     }
 
@@ -38,7 +37,7 @@ public class ExceptionHandleExample {
     }
 
     @Test
-    public void 예외처리_회피() {
+    public void 예외처리_회피1() {
         Person person = null;
 
         try {
@@ -47,6 +46,12 @@ public class ExceptionHandleExample {
         } catch (NullPointerException e) {
             throw e;
         }
+    }
+
+    @Test
+    public void 예외처리_회피2() throws NullPointerException {
+        Person person = null;
+        person.setName("이름입니다.");
     }
 
 
