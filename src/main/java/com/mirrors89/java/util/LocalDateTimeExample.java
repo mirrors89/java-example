@@ -1,5 +1,6 @@
 package com.mirrors89.java.util;
 
+import java.time.Month;
 import org.junit.Test;
 
 import java.time.LocalDateTime;
@@ -23,7 +24,7 @@ public class LocalDateTimeExample {
 
     @Test
     public void of() {
-        LocalDateTime now = LocalDateTime.of(2019, 5, 5, 0, 0, 0);
+        LocalDateTime now = LocalDateTime.of(2019, Month.MAY, 5, 0, 0, 0);
 
         System.out.println(now);
     }

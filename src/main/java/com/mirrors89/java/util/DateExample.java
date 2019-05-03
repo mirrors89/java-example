@@ -17,7 +17,7 @@ public class DateExample {
     @Test
     public void todayFormat() {
         Date today = new Date();
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-DD hh:mm:ss");
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
 
         String formatDate = simpleDateFormat.format(today);
 
@@ -43,8 +43,8 @@ public class DateExample {
         Date beforeDay = new Date();
         beforeDay.setHours(beforeDay.getHours() - 1);
 
-        System.out.println(today.after(beforeDay)); // true
-        System.out.println(beforeDay.after(today)); // false
+        System.out.println(today.before(beforeDay)); // false
+        System.out.println(beforeDay.before(today)); // true
     }
 
     @Test
@@ -67,10 +67,10 @@ public class DateExample {
         Date today = new Date();
 
         System.out.println(today.getTime());
-        today.setTime(10000000);
+        today.setTime(100000);
 
-//        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-DD hh:mm:ss");
-//        String formatDate = simpleDateFormat.format(today);
-//        System.out.println(formatDate);
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+        String formatDate = simpleDateFormat.format(today);
+        System.out.println(formatDate);
     }
 }

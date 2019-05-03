@@ -7,8 +7,8 @@ public class WrapperExample {
 
     @Test
     public void integerCache() {
-        Integer int1 = 127;
-        Integer int2 = 127;
+        Integer int1 = 128;
+        Integer int2 = 128;
 
         System.out.println(int1 == int2);
     }
@@ -23,10 +23,6 @@ public class WrapperExample {
 
     @Test
     public void ss() {
-        Double double1 = 1D;
-        Double double2 = 1D;
-
-        System.out.println(double1 == double2);
     }
 
 }

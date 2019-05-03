@@ -27,12 +27,15 @@ public class ExceptionHandleExample {
             person.setName("이름입니다.");
 
         } catch (NullPointerException e) {
-            System.out.println("예외가 발생했습니다.");
+            System.out.println("널 예외가 발생했습니다.");
 
             person = new Person();
             person.setName("Default");
 
             System.out.println(person.getName());
+        } catch (Exception e) {
+            System.out.println("예외가 발생했습니다.");
+            e.printStackTrace();
         }
     }
 

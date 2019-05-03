@@ -28,9 +28,8 @@ public class OptionalExample {
     }
     @Test
     public void ofWithNull() {
-        String nullString = null;
-
-        Optional<String> optionalNullString = Optional.of(nullString);
+//        Optional<String> optionalNullString = Optional.of(nullableMethod(true));
+        Optional<String> optionalNullString = Optional.of(nullableMethod(false));
 
         System.out.println(optionalNullString.isPresent());
 
