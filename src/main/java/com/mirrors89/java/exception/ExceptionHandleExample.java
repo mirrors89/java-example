@@ -2,13 +2,19 @@ package com.mirrors89.java.exception;
 
 import org.junit.Test;
 
+import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 
 public class ExceptionHandleExample {
 
     @Test
     public void checkedException() {
-        // PrintWriter printWriter = new PrintWriter("./test.txt");
+        try {
+            PrintWriter printWriter = new PrintWriter("./test.txt");
+
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
 
     }
 
@@ -33,6 +39,9 @@ public class ExceptionHandleExample {
             person.setName("Default");
 
             System.out.println(person.getName());
+        } catch (IndexOutOfBoundsException e) {
+
+
         } catch (Exception e) {
             System.out.println("예외가 발생했습니다.");
             e.printStackTrace();

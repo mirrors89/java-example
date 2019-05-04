@@ -17,7 +17,7 @@ public class DateExample {
     @Test
     public void todayFormat() {
         Date today = new Date();
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
         String formatDate = simpleDateFormat.format(today);
 
@@ -57,19 +57,19 @@ public class DateExample {
         Date afterDay = new Date();
         afterDay.setHours(afterDay.getHours() + 1);
 
-        System.out.println(today.compareTo(beforeDay));
-        System.out.println(today.compareTo(today));
-        System.out.println(today.compareTo(afterDay));
+        System.out.println(today.compareTo(beforeDay)); // 1
+        System.out.println(today.compareTo(today));     // 0
+        System.out.println(today.compareTo(afterDay));  // -1
     }
 
     @Test
     public void time() {
         Date today = new Date();
 
-        System.out.println(today.getTime());
+//        System.out.println(today.getTime());
         today.setTime(100000);
-
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+//
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         String formatDate = simpleDateFormat.format(today);
         System.out.println(formatDate);
     }

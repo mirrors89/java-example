@@ -10,9 +10,13 @@ public class StringBuilderExample {
         StringBuilder stringBuilder = new StringBuilder(32);
 
         for(int i = 0; i < 10; i++) {
+            StringBuilder temp = stringBuilder;
+
             stringBuilder.append(i);
             System.out.println(stringBuilder.toString());
-            System.out.println("HashCode : " + stringBuilder.hashCode());
+            System.out.println(stringBuilder == temp);
+            System.out.println();
+
         }
     }
 

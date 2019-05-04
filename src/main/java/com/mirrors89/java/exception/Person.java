@@ -1,6 +1,6 @@
 package com.mirrors89.java.exception;
 
-public class Person {
+public class Person  implements Comparable<Person>{
 
     private String name;
     private String phone;
@@ -46,5 +46,10 @@ public class Person {
                 ", phone='" + phone + '\'' +
                 ", email='" + email + '\'' +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Person o) {
+        return 0;
     }
 }

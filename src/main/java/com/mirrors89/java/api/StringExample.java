@@ -26,9 +26,12 @@ public class StringExample {
         String a1 = "0";
 
         for(Integer i = 1; i < 10; i++) {
+            String a2 = a1;
+
             a1 = a1 + i.toString();
             System.out.println(a1);
-            System.out.println("HashCode : " + a1.hashCode());
+            System.out.println(a1 == a2);
+            System.out.println();
         }
 
     }

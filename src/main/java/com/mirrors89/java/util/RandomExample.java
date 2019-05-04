@@ -25,12 +25,15 @@ public class RandomExample {
 
         System.out.println(random1.nextInt());
         System.out.println(random2.nextInt());
+        System.out.println();
 
         System.out.println(random1.nextInt());
         System.out.println(random2.nextInt());
+        System.out.println();
 
         System.out.println(random1.nextInt());
         System.out.println(random2.nextInt());
+        System.out.println();
 
         System.out.println(random1.nextInt());
         System.out.println(random2.nextInt());
